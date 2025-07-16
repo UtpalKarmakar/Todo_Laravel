@@ -29,7 +29,7 @@
                         <div class="card-footer">
 
                             @if ($todo->status == 0)
-                                <a href="">Edit</a>
+                                <a href="{{ route('edit', $todo->id) }}">Edit</a>
                             @endif
 
                             <a href="{{ route('delete', $todo->id) }}">Delete</a>
